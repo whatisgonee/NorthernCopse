@@ -108,39 +108,3 @@
 
 
 </html>
-			<h3 id="actuallyItSaid" style="margin:0"></h3>
-			<div id="ruins"></div>
-		</div>
-
-		<div class="smallMoon"></div>
-
-		<script>
-			var texts = ["A hundred curious eyes. All watching.", "Where even the moon is watching.", "The Society of Curious Eyes.", "Where tales come true and dreams all fade.", "The place where trees listen.", "In the middle of the forest.", "Behind the mountains.", "We always watch.", "Where the police is never sleeping.", "Where the government doesn't watch.", "Where the Moon never sets.", "Where the Sun never rises.", "The place that doesn't exist.", "The place that does exist.", "The place to hear real news.", "Nothing is real, except us.", "Everything is real, except us.", "A myth.", "The place born of God and raised by Devil.", "Burden of the world.", "Where anything can happen and nothing does.", "The home of Schrödinger's cat.", "Hell on Earth.", "Heaven on Earth.", "The river flows in you. And in here.", "Where time doesn't exist.", "Population: everybody."]
-			var actually = ["We’ve all had to suffer the consequences of being born.","You know what you did. Now tell me, I want to know too!","Pay for your actions. It’s the law. We all have to pay our taxes.","Words mean everything. And you mean nothing.","Did you know that worms can live after being cut in two? And that they can survive without food or water for ten years? And that they see you? They visit you every night. On your bed. In your head.","Press the key. Any key. Your key. Hey, not mine!","Clouds are wonderful. They make up twenty percent of the sky. Fifty percent of water. And ninety percent of your dreams.","Do you need help?","Actions speak louder than words. Except that they don’t speak. They crawl at night and hit you with a bat.","Don’t wait for the right moment. The right moment will come for you and take you away. Say goodbye.","There is no correct choice in life. Everybody makes mistakes, despite there being no correct and incorrect choice.","Animals are beautiful. Just look at the gracious three legged horse. Or that lion with just one eye. Or that deer that looks strangely similar to the one you hit one day. Except now it has even more antlers.","Books don’t make sense. Neither do you. So you are books and books are you.","A tall man once told me something very important. I didn’t hear it, he was really tall.","A dog loves you just because. A cat loves you because you give it food. Your reflection loves you because you give it life.","I adore windows. They let me see something that cannot be perceived by any normal means. They let me see through walls and doors and flesh and even through trees!","Prepare for trouble and run.","Sun is beautiful. I like to stare at it for hours until it burns a hole in my eyes. And then I continue staring at it until I die.","A TV screen is just a bunch of coloured dots. You too are a bunch of colured dots. Except your dots are cooler than the TV screen’s ones.","The creation of a simple carpet is a painfully long process. First, you’ve got to find a wild carpet and hunt it. Then, you have to clean out its intestines and let the hide dry. Then, you’ve got to give it the right form. And only after all of that do you get a carpet.","A fridge is like your stomach except it's the opposite.","Look at the sky. Now keep staring. Look closer and run.","It’s rude to stare at a portrait. It’s difficult to stand still, so keep your eyes off of them and let them move around.","You never know what you will find whenever you open your cupboard. What if you find your eyes? Or maybe that keyring that was super cool which you lost like a month ago.","A moth flies to the flame not because it’s warm or beautiful. But because it knows that the flame holds the secrets to the universe."," A clever man once said that he wasn’t clever.","…And that’s how we met each other. Who would have guessed that a chicken can change your entire life.","If you squint your eyes and ignore all of your bad sides, you’re a pretty nice person.","So I just came from the shopping mall and guess what? It wasn’t a shopping mall at all! It was someone else’s home. I’m telling you, we should stop living in old, abandoned shopping malls. So confusing.","Do you reckon they used to type on keyboards in the past? I’m so glad we got rid of them a century ago. These new — are much nicer than an array of keys.","Stop what you’re doing and appreciate yourself!"]
-
-			document.body.onload = loadFun()
-
-			function loadFun() {
-				document.getElementById("message").innerHTML = texts[Math.floor(Math.random() * texts.length)]
-
-				if(Math.floor(Math.random() * 100) == 1) {
-
-					var eye1 = document.getElementById("eye1")
-					var eye2 = document.getElementById("eye2")
-					eye1.innerHTML = '<div class="brow" style="transform: rotate(180deg);margin-top:-12px;margin-left:-32px;"></div>'
-					eye2.innerHTML = '<div class="brow" style="transform: rotate(180deg);margin-top:-12px;margin-left:-32px;"></div>'
-					eye1.classList.add('closedEye')
-					eye2.classList.add('closedEye')
-					eye1.classList.remove('eye')
-					eye2.classList.remove('eye')
-
-					document.getElementById("message").innerHTML = "Everybody needs to rest sometimes."
-				}
-
-				document.getElementById("actuallyItSaid").innerHTML = actually[Math.floor(Math.random() * actually.length)] + "”"
-			}
-		</script>
-	</body>
-
-
-</html>
